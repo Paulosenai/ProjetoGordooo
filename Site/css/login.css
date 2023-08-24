@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Gotham";
+    src: url(/css/Gotham-Black.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gotham";
+}
+
+.container {
+    width: 40%; 
+    height: 94vh;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: none;  
+    border: 1px solid black;
+
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+.navigation-links {
+    flex: 1;
+    text-align: right;   
+}
+
+.navigation-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navigation-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px 8px;
+}
+
+.navigation-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation-links ul li:hover::after {
+    width: 70%;
+}
+
+.navigation-links .botao {
+    background-color: #fff;
+    border-radius: 16px;
+    border: none;
+    font-size: 13pt;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.navigation-links .botao:hover {
+    transform: scale(1.1);
+}
+
+
+
+
